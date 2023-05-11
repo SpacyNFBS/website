@@ -34,10 +34,10 @@ app.get('/sponsors/*', (req, res) => {
 app.get('/embed/*', (req, res) => {
   res.sendFile(__dirname + "/web/" + req.path)
 })
-app.get('/JJc/*', (req, res) => {
+app.get('/JJ_PUTRA/*', (req, res) => {
   res.sendFile(__dirname+req.path.replace(/%20/g," "))
 })
-app.get('/JJt/*', (req, res) => {
+app.get('/JJ_PUTRI/*', (req, res) => {
   res.sendFile(__dirname+req.path.replace(/%20/g," "))
 })
 app.listen(port, () => {

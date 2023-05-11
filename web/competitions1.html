@@ -71,21 +71,21 @@ body {
   font-family: Jaapokki
 }
 
-.section_our_solution .row {
+.test_section .row {
   align-items: center;
 }
 
-.our_solution_category {
+.test_category {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.our_solution_category .solution_cards_box {
+.test_category .test_cards_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.solution_cards_box .solution_card {
+.test_cards_box .test_card {
   flex: 0 50%;
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
@@ -100,23 +100,23 @@ body {
   transition: 0.7s;
 }
 
-.solution_cards_box .solution_card:hover {
+.test_cards_box .test_card:hover {
   background: #309df0;
   color: #fff;
   transform: scale(1.1);
   z-index: 9;
 }
 
-.solution_cards_box .solution_card:hover::before {
+.test_cards_box .test_card:hover::before {
   background: rgb(85 108 214 / 10%);
 }
 
-.solution_cards_box .solution_card:hover .solu_title h3,
-.solution_cards_box .solution_card:hover .solu_description p {
+.test_cards_box .test_card:hover .card_test_title h3,
+.test_cards_box .test_card:hover .test_descr p {
   color: #fff;
 }
 
-.solution_cards_box .solution_card:before {
+.test_cards_box .test_card:before {
   content: "";
   position: absolute;
   background: rgb(85 108 214 / 5%);
@@ -129,27 +129,27 @@ body {
   border-radius: 35px;
 }
 
-.solution_cards_box .solution_card:hover .solu_description button {
+.test_cards_box .test_card:hover .test_descr button {
   background: #fff !important;
   color: #309df0;
 }
 
-.solution_card .so_top_icon {
+.test_card .test_top_icon {
 }
 
-.solution_card .solu_title h3 {
+.test_card .card_test_title h3 {
   color: #212121;
   font-size: 1.3rem;
   margin-top: 13px;
   margin-bottom: 13px;
 }
 
-.solution_card .solu_description p {
+.test_card .test_descr p {
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-.solution_card .solu_description button {
+.test_card .test_descr button {
   border: 0;
   border-radius: 15px;
   background: linear-gradient(
@@ -164,12 +164,12 @@ body {
   padding: 5px 16px;
 }
 
-.our_solution_content h1 {
+.test_card_content h1 {
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
-.our_solution_content p {
+.test_card_content p {
 }
 
 .hover_color_bubble {
@@ -187,11 +187,11 @@ body {
   transition: 0.7s;
 }
 
-.solution_cards_box .solution_card:hover .hover_color_bubble {
+.test_cards_box .test_card:hover .hover_color_bubble {
   top: 0rem;
 }
 
-.solution_cards_box .solution_card .so_top_icon {
+.test_cards_box .test_card .test_top_icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -202,7 +202,7 @@ body {
   justify-content: center;
 }
 
-.solution_cards_box .solution_card .so_top_icon img {
+.test_cards_box .test_card .test_top_icon img {
   width: 40px;
   height: 50px;
   object-fit: contain;
@@ -215,17 +215,17 @@ body {
     top: 0;
   }
 
-  .our_solution_category {
+  .test_category {
     width: 100%;
     margin: 0 auto;
   }
 
-  .our_solution_category .solution_cards_box {
+  .test_category .test_cards_box {
     flex: auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  .our_solution_category .solution_cards_box {
+  .test_category .test_cards_box {
     flex: 1;
   }
 }
@@ -234,7 +234,7 @@ body {
     position: relative;
     top: -3rem;
   }
-  .our_solution_category {
+  .test_category {
     width: 50%;
     margin: 0 auto;
   }
@@ -315,251 +315,251 @@ body {
       <h1 class="font-jaa">Spacy V-Teen // COMPETITIONS | PUTRA</h1>
     <br><br>
     
-<div class="section_our_solution">
+<div class="test_section">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
-      <div class="our_solution_category">
-        <div class="solution_cards_box">
-          <div class="solution_card">
+      <div class="test_category">
+        <div class="test_cards_box">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/add-files-icon.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Regristrasi</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Regristrasi SPACY V-TEEN Telah dibuka. Daftar sekarang!
               </p>
               <a href="https://bit.ly/spacy15putra" target="_blank"><button type="button" class="read_more_btn">Open</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/qmark2.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>UMUM /</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Petunjuk Pelaksanaan dan Teknis Spacy FIFTEEN<br>Harga Lomba Spacy FIFTEEN, Peraturan, Ketentuan-Ketentuan, Kontak
               </p>
-              <a href="/JJc/UMUM.pdf" target="_blank"><button type="button" class="read_more_btn">Open</button></a>
+              <a href="/JJ_PUTRA/UMUM.pdf" target="_blank"><button type="button" class="read_more_btn">Open</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/math-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>MATH
                 
             </h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Matematika menilai kemampuan peserta dalam menyelesaikan soal matematika secara cepat dan akurat dengan sifat kompetitif.
               </p>
-              <a href="/JJc/MTK SD SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
+              <a href="/JJ_PUTRA/MTK SD SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/science-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>IPA</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba IPA menilai pemahaman peserta dalam fisika, biologi, dan kimia dengan pengetahuan dasar di bidang IPA.
               </p>
-              <a href="/JJc/IPA SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
+              <a href="/JJ_PUTRA/IPA SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/english-input-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Inggris</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Bahasa Inggris menguji kemampuan peserta dalam bahasa Inggris untuk meningkatkan keterampilan mereka dalam berbicara, menulis, dan memahami bahasa Inggris.
               </p>
-              <a href="/JJc/Ingris SD+SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
+              <a href="/JJ_PUTRA/Ingris SD+SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/quran-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>MHQ (Al-Quran)</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Kompetisi yang menguji kemampuan peserta dalam membaca dan menghafal Al-Quran dengan baik dan benar.
               </p>
-              <a href="/JJc/MHQ SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a><a href="/JJc/MHQ SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
+              <a href="/JJ_PUTRA/MHQ SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a><a href="/JJ_PUTRA/MHQ SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/swimming-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Renang</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Renang menguji kemampuan peserta dalam berenang dengan baik dan benar dengan berbagai gaya renang yang berbeda.
               </p>
-              <a href="/JJc/RENANG SD+SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
+              <a href="/JJ_PUTRA/RENANG SD+SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/soccer-ball-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Futsal</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Futsal menguji kemampuan peserta dalam bermain futsal dengan baik dan fair play, diadakan dalam acara yang diselenggarakan.
               </p>
-              <a href="/JJc/Futsal SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a><a href="/JJc/Futsal SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
+              <a href="/JJ_PUTRA/Futsal SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a><a href="/JJ_PUTRA/Futsal SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/badminton-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Badminton</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Badminton adalah kompetisi bulu tangkis yang diadakan dalam rangka meningkatkan kemampuan peserta dalam bermain bulu tangkis, keterampilan teknis, serta memupuk semangat sportivitas dan kebersamaan di antara para peserta.
               </p>
-              <a href="/JJc/Badminton SD+SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
+              <a href="/JJ_PUTRA/Badminton SD+SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD/SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/basketball-2-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Basket</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Basket adalah kompetisi bola basket yang diadakan dalam rangka meningkatkan kemampuan peserta dalam bermain basket, keterampilan teknis, serta memupuk semangat sportivitas dan kebersamaan di antara para peserta.
               </p>
-              <a href="/JJc/Basket SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
+              <a href="/JJ_PUTRA/Basket SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/volleyball-1-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Voli</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Voli adalah kompetisi bola voli yang diadakan dalam rangka meningkatkan kemampuan peserta dalam bermain voli, keterampilan teknis, serta memupuk semangat sportivitas dan kebersamaan di antara para peserta.
               </p>
-              <a href="/JJc/VOLI SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
+              <a href="/JJ_PUTRA/VOLI SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/tent-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Adventure of Scout (AOS)</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Adventure of Scout (AOS) adalah kegiatan petualangan untuk anggota pramuka yang bertujuan untuk mengembangkan keterampilan bertahan hidup, kepemimpinan, teamwork, dan kemampuan fisik.
               </p>
-              <a href="/JJc/Adventure Of Scout SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
+              <a href="/JJ_PUTRA/Adventure Of Scout SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/volleyball-1-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Voli</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Voli adalah kompetisi bola voli yang diadakan dalam rangka meningkatkan kemampuan peserta dalam bermain voli, keterampilan teknis, serta memupuk semangat sportivitas dan kebersamaan di antara para peserta.
               </p>
-              <a href="/JJc/VOLI SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
+              <a href="/JJ_PUTRA/VOLI SMP.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SMP</button></a>
             </div>
           </div>
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/speech-2-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Cipta Cerita Pendek</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba cerpen online untuk siswa kelas 5-6 atau sederajat dengan tema "Pahlawan". Peserta harus mematuhi syarat dan ketentuan serta mengikuti seluruh rangkaian acara. Lomba bersifat individu.
               </p>
-              <a href="/JJc/Cipta Cerita Pendek.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
+              <a href="/JJ_PUTRA/Cipta Cerita Pendek.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
             </div>
           </div>  
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/speech-left-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Story Telling</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba cerpen online untuk siswa kelas 5-6 atau sederajat dengan tema "Pahlawan". Peserta harus mematuhi syarat dan ketentuan serta mengikuti seluruh rangkaian acara. Lomba bersifat individu.
               </p>
-              <a href="/JJc/Cipta Cerita Pendek.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
+              <a href="/JJ_PUTRA/Cipta Cerita Pendek.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
             </div>
           </div>    
-          <div class="solution_card">
+          <div class="test_card">
             <div class="hover_color_bubble"></div>
-            <div class="so_top_icon">
+            <div class="test_top_icon">
               <img src="/svgs/tiktok-svgrepo-com.svg">
             </div>
-            <div class="solu_title">
+            <div class="card_test_title">
               <h3>Tiktok</h3>
             </div>
-            <div class="solu_description">
+            <div class="test_descr">
               <p>
                 Lomba Tiktok untuk siswa SD kelas 4-6 dengan tema yang ditentukan. Peserta mengunggah video di akun Tiktok persekolahan. Lomba menilai originalitas karya, jumlah like JURI, keunikan karya, dan intonasi suara.
               </p>
-              <a href="/JJc/TIKTOK SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
+              <a href="/JJ_PUTRA/TIKTOK SD.pdf" target="_blank"><button type="button" class="read_more_btn">Peraturan | SD</button></a>
             </div>
           </div>                              
         </div>
