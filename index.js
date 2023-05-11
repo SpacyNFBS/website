@@ -29,7 +29,7 @@ app.get('/font/*', (req, res) => {
   res.sendFile(__dirname + req.path)
 })
 app.get('/sponsors/*', (req, res) => {
-  res.sendFile(__dirname + req.path)
+  res.sendFile(__dirname + req.path.replace(/%20/g," "))
 })
 app.get('/embed/*', (req, res) => {
   res.sendFile(__dirname + "/web/" + req.path)
