@@ -1,3 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const express = require('express')
 
 
@@ -28,7 +58,7 @@ app.get('/svgs/*', (req, res) => {
 app.get('/font/*', (req, res) => {
   res.sendFile(__dirname + req.path)
 })
-app.get('/sponsors/*', (req, res) => {
+app.get('/sponsors_putra/*', (req, res) => {
   res.sendFile(__dirname + req.path.replace(/%20/g," "))
 })
 app.get('/embed/*', (req, res) => {
