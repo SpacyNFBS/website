@@ -1,15 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-const imagesDir = path.join(__dirname, 'sponsors_putra'); // replace with your folder path
-const images = fs.readdirSync(imagesDir).filter(file => {
-  return file.endsWith('.jpg') || file.endsWith('.png'); // replace with your desired file extensions
-});
-
-
-console.log(images)
-
-
 
 
 
@@ -47,6 +38,9 @@ app.get('/', (req, res) => {
 })
 app.get('/putra', (req, res) => {
   res.sendFile(__dirname+"/web/thalib.html")
+})
+app.get('/what', (req, res) => {
+  res.sendFile(__dirname+"/web/lol.html")
 })
 app.get('/putri', (req,res)=>{
   res.sendFile(__dirname+"/web/thalibah.html")
