@@ -69,9 +69,27 @@
         font-weight: bold;
         src: url("font/Jaapokki-Regular.otf") format("opentype");
       }
+      .carousel-control-next,
+      .carousel-control-prev, .carousel-indicators  {
+          filter:   invert(1);
+      }
 
       .font-jaa {
         font-family: Jaapokki
+      }
+      .zoom {
+        transition: transform .2s; /* Animation */
+      }
+
+      .zoom:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+      .zoom2 {
+        transition: transform .2s; /* Animation */
+      }
+
+      .zoom2:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -114,12 +132,10 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="container-sm bg-white rounded py-2">
+        <h3>Sponsored by:</h3>
+        <img src="/sponsors_putri/TELKOM.png"class="img-fluid zoom2" width='14%'><img src="/sponsors_putri/PAKARIPAL.png"class="img-fluid zoom2" width='20%'><img src="/sponsors_putri/NUSANTARANIGGAGRO.png"class="img-fluid zoom2" width='20%'>
+        </div>
         <br>
         <br>
         <br>
@@ -183,7 +199,84 @@
         <br>
         <br>
         <br>
-       
+        <div class="container px-4 py-5 bg-white rounded zoom">
+          <center>
+            <img class="bd-placeholder-img rounded invert-svg" src="./../svgs/simple-handshake-svgrepo-com.svg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+            </svg>
+            <h1>SPONSORS</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/sponsors_putri/JASTAN.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/PRAYOG.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/GARUDA.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/IMFORSTYS.png" class="d-block w-50" alt="..." width="109.5">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/AKSARAMAYA.png" class="d-block w-50" alt="..." width="543.3">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/HIMOMU.png" class="d-block w-50" alt="..." width="273.666666667">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/medium_A2lBAmSMTm5hm7VONpZCi7GIWqGhguoA3JjarIj5.png" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/Logo HK - Inovasi Untuk Solusi (1).png" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/EMINA.png" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/MITRA INTI MEDIK.png" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/PLN.png" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/ADIMAS.png" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/sponsors_putri/NABATIT.png" class="d-block w-50" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </center>
+        </div>
+      </div>
           </center>
         </div>
       </div>

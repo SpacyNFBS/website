@@ -39,9 +39,6 @@ app.get('/', (req, res) => {
 app.get('/putra', (req, res) => {
   res.sendFile(__dirname+"/web/thalib.html")
 })
-app.get('/what', (req, res) => {
-  res.sendFile(__dirname+"/web/lol.html")
-})
 app.get('/putri', (req,res)=>{
   res.sendFile(__dirname+"/web/thalibah.html")
 })
@@ -61,6 +58,9 @@ app.get('/font/*', (req, res) => {
   res.sendFile(__dirname + req.path)
 })
 app.get('/sponsors_putra/*', (req, res) => {
+  res.sendFile(__dirname + req.path.replace(/%20/g," "))
+})
+app.get('/sponsors_putri/*', (req, res) => {
   res.sendFile(__dirname + req.path.replace(/%20/g," "))
 })
 app.get('/embed/*', (req, res) => {
