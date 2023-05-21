@@ -34,6 +34,9 @@ const app = express()
 const port = 80
 
 app.get('/', (req, res) => {
+  res.sendFile(__dirname + "/web/over.html")
+})
+app.get('/homepage', (req, res) => {
   res.sendFile(__dirname + "/web/index.html")
 })
 app.get('/putra', (req, res) => {
